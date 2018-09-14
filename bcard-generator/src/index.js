@@ -5,7 +5,6 @@ import registerServiceWorker from './utils/registerServiceWorker';
 
 const App = () => {
     return (
-
         <div>hello from app</div>
     )
 }
