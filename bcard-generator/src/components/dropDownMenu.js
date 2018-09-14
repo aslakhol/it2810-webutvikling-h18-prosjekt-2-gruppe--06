@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import menuItem from './menuItem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -32,7 +31,9 @@ export class DropDownMenu extends Component {
         }))
     }
     render() {
-        const { list, toggleItem } = this.props;
+        const  selected  = this.props.list.selected;
+        const items = this.props.list.items;
+        const {toggleItem} = this.props;
         const { listOpen, headerTitle } = this.state;
         return (
             <div className="dd-wrapper">
@@ -44,10 +45,10 @@ export class DropDownMenu extends Component {
                     }
                 </div>
                 {listOpen && <ul className="dd-list">
-                    {list.map((item) => (
+                    {items.map((item) => (
                         <li className="dd-list-item" key={item.title} onClick={() => toggleItem(item.id, item.key)}>
                             {item.title}
-                            {item.selected && <FontAwesomeIcon icon="check"/>}
+                            {item.id == selected && <FontAwesomeIcon icon="check"/>}
                         </li>
                     ))}
                 </ul>}
