@@ -31,14 +31,14 @@ export class DropDownMenu extends Component {
         }))
     }
     render() {
-        const  selected  = this.props.list.selected;
+        const selected = this.props.list.selected;
         const items = this.props.list.items;
-        const {toggleItem} = this.props;
-        const { listOpen, headerTitle } = this.state;
+        const { toggleItem, title } = this.props;
+        const { listOpen } = this.state;
         return (
             <div className="dd-wrapper">
                 <div className="dd-header" onClick={() => this.toggleList()}>
-                    <div className="dd-header-title">{headerTitle}</div>
+                    <div className="dd-header-title">{title}</div>
                     {listOpen
                         ? <FontAwesomeIcon icon="angle-up" size="2x" />
                         : <FontAwesomeIcon icon="angle-down" size="2x" />
@@ -46,9 +46,9 @@ export class DropDownMenu extends Component {
                 </div>
                 {listOpen && <ul className="dd-list">
                     {items.map((item) => (
-                        <li className="dd-list-item" key={item.title} onClick={() => toggleItem(item.id, item.key)}>
-                            {item.title}
-                            {item.id == selected && <FontAwesomeIcon icon="check"/>}
+                        <li className="dd-list-item" key={item.name} onClick={() => toggleItem(item.id, item.key)}>
+                            {item.name}
+                            {item.id == selected && <FontAwesomeIcon icon="check" />}
                         </li>
                     ))}
                 </ul>}
