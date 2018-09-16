@@ -12,7 +12,7 @@ class Menu extends Component {
         }
     }
 
-    handleChange(id, key){
+    handleChange(id, key) {
         //todo
         return;
     }
@@ -30,20 +30,20 @@ class Menu extends Component {
             <div id="menu">
                 <DropDownMenu
                     title="Select Group"
-                    list={this.state.group}
-                    toggleItem={this.toggleSelected.bind(this)}>
+                    list={ this.state.group }
+                    toggleItem={ this.toggleSelected.bind(this) }>
                 </DropDownMenu>
 
                 <DropDownMenu
                     title="Select Sound"
-                    list={this.state.sound}
-                    toggleItem={this.toggleSelected.bind(this)}>
+                    list={ this.state.sound }
+                    toggleItem={ this.toggleSelected.bind(this) }>
                 </DropDownMenu>
                 
                 <DropDownMenu
                     title="Select Icon"
-                    list={this.state.icon}
-                    toggleItem={this.toggleSelected.bind(this)}>
+                    list={ this.state.icon }
+                    toggleItem={ this.toggleSelected.bind(this) }>
                 </DropDownMenu>
            </div>
         );
