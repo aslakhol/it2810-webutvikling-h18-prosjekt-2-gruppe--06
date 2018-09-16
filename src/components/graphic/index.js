@@ -4,8 +4,6 @@ class Graphic extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            error: null,
-            isLoaded: false,
             image: null,
         };
     }
@@ -18,7 +16,7 @@ class Graphic extends React.Component {
 
     render () {
         return (
-            <div dangerouslySetInnerHTML={{ __html: this.state.image }}>
+            <div className="graphic" dangerouslySetInnerHTML={{ __html: this.state.image }}>
             </div>
         )
     }

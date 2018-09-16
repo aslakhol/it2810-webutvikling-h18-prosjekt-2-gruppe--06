@@ -1,19 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style/index.css';
 import registerServiceWorker from './utils/registerServiceWorker';
 
 import CardDisplay from './components/cardDisplay';
-import Graphic from './components/graphic';
+
+import './style/index.css';
+import './style/cardDisplay.css';
 
 const App = () => {
     return (
         <div>
             <CardDisplay />
-            <p>Stuff is here</p>
-            <Graphic />
         </div>
-
     );
 };
 
