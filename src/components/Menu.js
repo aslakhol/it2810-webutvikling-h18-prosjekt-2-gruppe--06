@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import DropDownMenu from './dropDownMenu'
 import {icon,sound,group} from './../utils/StateInit';
 
-export default class Menu extends Component {
-    constructor() {
-        super()
+class Menu extends Component {
+    constructor(props) {
+        super(props)
         this.state = {
             group:group,       
             sound:sound,
@@ -50,3 +50,5 @@ export default class Menu extends Component {
         );
     }
 }
+
+export default Menu;
