@@ -15,31 +15,6 @@ export default class Menu extends Component {
         }
     }
 
-    componentDidMount() {
-        
-
-        fetch('/text/comitee.json', {
-            headers: {
-                "Content-Type": "application/json; charset=utf-8",
-            },
-        })
-            .then((response) => response.json())
-            .then((responseJson) => {
-            const temp = this.state.groups.splice()
-            temp[0].items = responseJson.comitee
-            temp[1].items = responseJson.subcomitee
-            temp[2].items = responseJson.interestgroup
-                this.setState({
-                   groups: temp, 
-
-                })
-            })
-            .catch((error) => {
-                console.error(error);
-            });
-
-            
-    }
 
     handleChange(id, key){
         //todo
