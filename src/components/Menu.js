@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 import DropDownMenu from './dropDownMenu'
-import {icon,sound,group} from './../utils/StateInit';
+import {icon, sound, group} from './../utils/StateInit';
 
 class Menu extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            group:group,       
-            sound:sound,
-            icon:icon
-        
+            group: group,       
+            sound: sound,
+            icon: icon,
         }
     }
 
@@ -42,7 +41,7 @@ class Menu extends Component {
                 </DropDownMenu>
                 
                 <DropDownMenu
-                    title="Select icon"
+                    title="Select Icon"
                     list={this.state.icon}
                     toggleItem={this.toggleSelected.bind(this)}>
                 </DropDownMenu>
