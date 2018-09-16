@@ -32,7 +32,7 @@ export class DropDownMenu extends Component {
     }
     render() {
         const selected = this.props.list.selected;
-        const items = this.props.list.items;
+        const items = this.props.list.categories;
         const { toggleItem, title } = this.props;
         const { listOpen } = this.state;
         return (

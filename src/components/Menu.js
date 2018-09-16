@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import DropDownMenu from './dropDownMenu'
+import {icon,sound,group} from './../utils/StateInit';
 
 
 export default class Menu extends Component {
@@ -7,36 +8,14 @@ export default class Menu extends Component {
     constructor() {
         super()
         this.state = {
-            groups:{ 
-                items:[
-                 {
-                    name: "comitee",
-                    items: [],
-                    id : 0,
-                    key : "groups",
-
-                },
-                 {
-                    name: "subcomitee",
-                    items: [],
-                    id: 1,
-                    key : "groups",
-                },
-                 {
-                    name: "interestgroup",
-                    items: [],
-                    id: 2,
-                    key : "groups",
-                },
-            ],
-                selected: null,   
-           
-            
-        },
+            group:group,       
+            sound:sound,
+            icon:icon
+        
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         
 
         fetch('/text/comitee.json', {
@@ -58,8 +37,14 @@ export default class Menu extends Component {
             .catch((error) => {
                 console.error(error);
             });
+
+            
     }
 
+    handleChange(id, key){
+        //todo
+        return;
+    }
 
     toggleSelected(id, key) {
         let temp = this.state[key]
@@ -74,14 +59,20 @@ export default class Menu extends Component {
         return (
             <div id="menu">
                 <DropDownMenu
-                    title="Select Location"
-                    list={this.state.groups}
+                    title="Select Group"
+                    list={this.state.group}
                     toggleItem={this.toggleSelected.bind(this)}>
                 </DropDownMenu>
 
                 <DropDownMenu
-                    title="Select Comitee"
-                    list={this.state.groups}
+                    title="Select Sound"
+                    list={this.state.sound}
+                    toggleItem={this.toggleSelected.bind(this)}>
+                </DropDownMenu>
+                
+                <DropDownMenu
+                    title="Select icon"
+                    list={this.state.icon}
                     toggleItem={this.toggleSelected.bind(this)}>
                 </DropDownMenu>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style/index.css';
+import './style/Dropdown.css';
 import registerServiceWorker from './utils/registerServiceWorker';
 import Menu from './components/Menu';
 import { library } from '@fortawesome/fontawesome-svg-core'
