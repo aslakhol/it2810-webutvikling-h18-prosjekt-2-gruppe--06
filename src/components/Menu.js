@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import DropDownMenu from './dropDownMenu'
 import {icon,sound,group} from './../utils/StateInit';
 
-
 export default class Menu extends Component {
-
     constructor() {
         super()
         this.state = {
@@ -14,7 +12,6 @@ export default class Menu extends Component {
         
         }
     }
-
 
     handleChange(id, key){
         //todo
@@ -28,7 +25,6 @@ export default class Menu extends Component {
             [key]: temp
         })
     }
-
 
     render() {
         return (
@@ -50,11 +46,7 @@ export default class Menu extends Component {
                     list={this.state.icon}
                     toggleItem={this.toggleSelected.bind(this)}>
                 </DropDownMenu>
-
-                {/* <DropDownMenu></DropDownMenu>
-
-                <DropDownMenu></DropDownMenu>
- */}            </div>
+           </div>
         );
     }
 }

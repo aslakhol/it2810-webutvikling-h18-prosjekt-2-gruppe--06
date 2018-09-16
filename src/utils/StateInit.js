@@ -5,7 +5,6 @@ const group = {
                 items: [],
                 id: 0,
                 key: "group",
-
             },
             {
                 name: "subcomitee",
@@ -21,8 +20,6 @@ const group = {
             },
         ],
         selected: null,
-
-
     }
 
 const sound = {
@@ -48,10 +45,7 @@ const sound = {
             },
         ],
         selected: null,
-
-
     }
-
 
 const icon = {
         categories: [
@@ -76,11 +70,6 @@ const icon = {
             },
         ],
         selected: null,
-
-
     }
-
-
-
 
 export { icon, sound, group } 

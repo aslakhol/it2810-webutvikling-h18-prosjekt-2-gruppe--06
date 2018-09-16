@@ -1,21 +1,16 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
-
 export class DropDownMenu extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
             menuItems: [{
                 label: "hei",
-                value: "hallo"
-
+                value: "hallo",
             }],
             listOpen: false,
             title: this.props.title,
-
         }
 
     }
@@ -25,11 +20,13 @@ export class DropDownMenu extends Component {
             listOpen: false
         })
     }
+
     toggleList() {
         this.setState(prevState => ({
             listOpen: !prevState.listOpen
         }))
     }
+
     render() {
         const selected = this.props.list.selected;
         const items = this.props.list.categories;
@@ -55,10 +52,6 @@ export class DropDownMenu extends Component {
             </div>
         )
     }
-
 }
-
-
-
 
 export default DropDownMenu;
