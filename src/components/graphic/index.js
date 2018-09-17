@@ -9,7 +9,7 @@ class Graphic extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:3000/svg/arrkomIcon.svg")
+        fetch("http://localhost:3000/svg/supporting/dotkomIcon.svg")
         .then(response => response.text())
         .then(svg => this.setState({image: svg}));
     };
