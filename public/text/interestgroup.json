@@ -1,0 +1,30 @@
+[
+    {
+        "key": "interestgroup",
+        "name": "Ontap",
+        "info": "Ontap er bryggelauget til Online :P",
+        "id": 0,
+        "icon": "ontapIcon"
+    },
+    {
+        "key": "interestgroup",
+        "name": "Quizline",
+        "info": "Quizline er onlines interessegruppe for quiz. Vi drar på quiz sammen, arrangerer quiz når vi føler for det og har en slack-kanal der vi diskuterer quiz. Bli gjerne med ved å joine #quizline.",
+        "id": 1,
+        "icon": "quizIcon"
+    },
+    {
+        "key": "interestgroup",
+        "name": "Sjadam",
+        "info": "Sjadam vil være en teknisk interressegruppe med fokus på Sjadam. Siden det alt har blitt utviklet en Sjadam AI, vil gruppens medlemmer ha anledning til å lage sine egne og kjempe mot hverandre. På de første samlingene vil spillet bli introdusert, og før sommeren vil det bli holdt en konkurranse hvor AI-ene kjemper mot hverandre.",
+        "id": 2,
+        "icon": "sjadamIcon"
+    },
+    {
+        "key": "interestgroup",
+        "name": "SjampisMandag",
+        "info": "Hver mandag klokken 16 popper vi sjampisen på kontoret. Vi finansierer aktivitetene våre selv, og ved å delta blir du lagt til i en liste også går det på rundgang hvem som kjøper inn sjampis. Nye deltagere får prøve seg på å sablere en flaske. Her kan du altså lære deg et heftig partytriks! Det er bare å møte opp, ingen påmelding trengs.",
+        "id": 3,
+        "icon": "sjampisIcon"
+    }
+]

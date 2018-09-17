@@ -1,5 +1,4 @@
-{
-  "comitee": [
+  [
     {
       "key": "comitee",
       "name": "Trikom",
@@ -49,66 +48,5 @@
       "id": 7,
       "icon": "prokomIcon"
     }
-    
-  ],
-  "subcomitee": [
-    {
-      "key": "subcomitee",
-      "name": "Velkom",
-      "info": "Fra ca. 2007 og frem til VelKom ble opprettet som egen komite ble fadderuka arrangert av en egen komite med utspring blant arrkoms medlemmer, men hvor også andre informatikkstudenter og onlinere kunne delta. Før dette var det arrKom som arrangerte fadderuka, med hjelp fra enkelte andre komitemedlemmer.",
-      "id": 0,
-      "icon": "velkomIcon"
-    },
-    {
-      "key": "subcomitee",
-      "name": "Ekskom",
-      "info": "Ekskursjonskomiteen skal planlegge og gjennomføre ekskursjonen for studenter ved linjeforeningen Online som studerer 3.året eller høyere.",
-      "id": 1,
-      "icon": "ekskomIcon"
-    },
-    {
-      "key": "subcomitee",
-      "name": "Redaksjonen",
-      "info": "Ruger du på ord og begreper i hjernehullet ditt som kan settes sammen til en helhetlig, lesbar tekst? Da ser Offline etter deg! Apene i redaksjonen er så vidt gode nok, så redaksjonen utvider horisontene ved å tilby eksterne artikler laget av vanlige dødelige.",
-      "id": 2,
-      "icon": "offlineIcon"
-    },
-    {
-      "key": "subcomitee",
-      "name": "ITEX",
-      "info": "Trivselskomiteen har ansvaret for trivsel blant informatikkstudentene. Dette inkluderer å arrangere flere små arrangementer og hyggelige sammenkomster i løpet av året, og drift av kontoret. Vi arrangerer frokoster og serievisninger på kontoret, teltturer, juleverksted og andre ting som skaper trivsel. Vi er også ansvarlig for drift av kontoret, som vil si å sette opp kontorvakter, møter, administrere tilganger og passe på at det er tilstrekkelig med mat, drikke, rekvisitter og lignende. Så hvis du har en gledesspreder i deg og liker å spre trivsel til dine medstudenter, er trikom komiteen for deg!",
-      "id": 3,
-      "icon": "itexIcon"
-    }
-  ],
-  "interestgroup": [
-    {
-      "key": "interestgroup",
-      "name": "Ontap",
-      "info": "Ontap er bryggelauget til Online :P",
-      "id": 0,
-      "icon": "ontapIcon"
-    },
-    {
-      "key": "interestgroup",
-      "name": "Quizline",
-      "info": "Quizline er onlines interessegruppe for quiz. Vi drar på quiz sammen, arrangerer quiz når vi føler for det og har en slack-kanal der vi diskuterer quiz. Bli gjerne med ved å joine #quizline.",
-      "id": 1,
-      "icon": "quizIcon"
-    },
-    {
-      "key": "interestgroup",
-      "name": "Sjadam",
-      "info": "Sjadam vil være en teknisk interressegruppe med fokus på Sjadam. Siden det alt har blitt utviklet en Sjadam AI, vil gruppens medlemmer ha anledning til å lage sine egne og kjempe mot hverandre. På de første samlingene vil spillet bli introdusert, og før sommeren vil det bli holdt en konkurranse hvor AI-ene kjemper mot hverandre.",
-      "id": 2,
-      "icon": "sjadamIcon"
-    },
-    {
-      "key": "interestgroup",
-      "name": "SjampisMandag",
-      "info": "Hver mandag klokken 16 popper vi sjampisen på kontoret. Vi finansierer aktivitetene våre selv, og ved å delta blir du lagt til i en liste også går det på rundgang hvem som kjøper inn sjampis. Nye deltagere får prøve seg på å sablere en flaske. Her kan du altså lære deg et heftig partytriks! Det er bare å møte opp, ingen påmelding trengs.",
-      "id": 3,
-      "icon": "sjampisIcon"
-    }
   ]
-}
+  
