@@ -9,13 +9,19 @@ import { faAngleUp, faAngleDown, faCheck } from '@fortawesome/free-solid-svg-ico
 
 library.add(faAngleUp, faAngleDown, faCheck);
 
+import CardDisplay from './components/cardDisplay';
+
+import './style/index.css';
+import './style/cardDisplay.css';
+
 const App = () => {
     return (
         <div>
             <Menu />
+            <CardDisplay />
         </div>
-    )
-}
+    );
+};
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
