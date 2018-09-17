@@ -18,10 +18,10 @@ class Menu extends Component {
     }
 
     toggleSelected(id, key) {
-        let temp = this.state[key]
-        temp.selected = [id]
+        let temporaryStateOfKey = this.state[key]
+        temporaryStateOfKey.selected = id
         this.setState({
-            [key]: temp
+            [key]: temporaryStateOfKey
         })
     }
 
@@ -30,19 +30,22 @@ class Menu extends Component {
             <div id="menu">
                 <DropDownMenu
                     title="Select Group"
-                    list={ this.state.group }
+                    categories={ this.state.group.categories }
+                    selected={ this.state.group.selected }
                     toggleItem={ this.toggleSelected.bind(this) }>
                 </DropDownMenu>
 
                 <DropDownMenu
                     title="Select Sound"
-                    list={ this.state.sound }
+                    categories={ this.state.sound.categories }
+                    selected={ this.state.sound.selected }
                     toggleItem={ this.toggleSelected.bind(this) }>
                 </DropDownMenu>
                 
                 <DropDownMenu
                     title="Select Icon"
-                    list={ this.state.icon }
+                    categories={ this.state.icon.categories }
+                    selected={ this.state.icon.selected }
                     toggleItem={ this.toggleSelected.bind(this) }>
                 </DropDownMenu>
            </div>

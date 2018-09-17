@@ -5,12 +5,7 @@ class DropDownMenu extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            menuItems: [{
-                label: "hei",
-                value: "hallo",
-            }],
             listOpen: false,
-            title: this.props.title,
         }
     }
      
@@ -27,9 +22,7 @@ class DropDownMenu extends Component {
     }
 
     render() {
-        const selected = this.props.list.selected;
-        const items = this.props.list.categories;
-        const { toggleItem, title } = this.props;
+        const { toggleItem, title, categories, selected } = this.props;
         const { listOpen } = this.state;
         return (
             <div className="dd-wrapper">
@@ -41,10 +34,10 @@ class DropDownMenu extends Component {
                     }
                 </div>
                 {listOpen && <ul className="dd-list">
-                    {items.map((item) => (
+                    {categories.map((item) => (
                         <li className="dd-list-item" key={ item.name } onClick={ () => toggleItem(item.id, item.key) }>
                             { item.name }
-                            { item.id == selected && <FontAwesomeIcon icon="check" /> }
+                            { item.id === selected && <FontAwesomeIcon icon="check" /> }
                         </li>
                     ))}
                 </ul>}
