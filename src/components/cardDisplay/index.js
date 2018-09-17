@@ -7,6 +7,7 @@ const CardDisplay = () => {
         <div className="card-display">
             <Graphic />
             <Sound />
+            <TextDisplay />
         </div>
     );
 };
