@@ -1,0 +1,16 @@
+.dd-wrapper{
+    font-size: 10px;
+}
+
+.dd-header{
+    border: solid #454545 1px;
+}
+
+.dd-list{
+    padding: 2em,3em,2em,4em;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
