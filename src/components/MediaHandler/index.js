@@ -89,8 +89,9 @@ class MediaHandler extends Component {
                     toggleSelected={ this.toggleSelected.bind(this) } />
                 <CardDisplay
                     image={ this.state.image }
-                    comiteetext={ this.state.comiteetext ? this.state.comiteetext.info : null }
-                    soundpath={ this.state.soundpath }
+                    comiteeText={ this.state.comiteetext ? this.state.comiteetext.info : null }
+                    comiteeName={ this.state.comiteetext ? this.state.comiteetext.name : null }
+                    soundPath={ this.state.soundpath }
                 />
             </div>
         )
