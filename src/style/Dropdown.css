@@ -1,8 +1,6 @@
 .dd-wrapper{
-    
     min-width: 300px;
     margin: 20px 5% 20px 5%;
-
 }
 
 .dd-header{
@@ -26,8 +24,6 @@
     position: relative;
     font-size: 18px;
     padding: 0.5em;
-    
-
 }
 
 .dd-list-item:hover{
@@ -40,10 +36,7 @@
     justify-content: center;
 }
 
-
-
 .check{
     position: absolute;
     right: 2px;
-    
 }
