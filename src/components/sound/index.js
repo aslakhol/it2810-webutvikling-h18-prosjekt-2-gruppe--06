@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Sound = () => {
+const Sound = (props) => {
     return (  
         <div className="sound">
-            <audio src="/sound/laserShoot.wav" autoPlay type="audio/wav"></audio>
+            <audio src={ props.soundpath } autoPlay type="audio/wav"></audio>
         </div>
     );
 }

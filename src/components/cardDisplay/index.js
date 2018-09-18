@@ -1,13 +1,13 @@
 import React from 'react';
-import Graphic from './../graphic'
-import Sound from './../sound'
+import Graphic from './../graphic';
+import Sound from './../sound';
 
-const CardDisplay = () => {
+const CardDisplay = (props) => {
     return (
         <div className="card-display">
-            <Graphic />
-            <Sound />
-            <TextDisplay />
+            <p>{ props.comiteetext }</p>
+            <Graphic image={ props.image } />
+            <Sound soundpath={ props.soundpath } />
         </div>
     );
 };
