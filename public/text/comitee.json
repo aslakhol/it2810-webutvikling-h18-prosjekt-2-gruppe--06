@@ -2,49 +2,49 @@
     {
       "key": "comitee",
       "name": "Trikom",
-      "info": "Trivselskomiteen har ansvaret for trivsel blant informatikkstudentene. Dette inkluderer å arrangere flere små arrangementer og hyggelige sammenkomster i løpet av året, og drift av kontoret. Vi arrangerer frokoster og serievisninger på kontoret, teltturer, juleverksted og andre ting som skaper trivsel. Vi er også ansvarlig for drift av kontoret, som vil si å sette opp kontorvakter, møter, administrere tilganger og passe på at det er tilstrekkelig med mat, drikke, rekvisitter og lignende. Så hvis du har en gledesspreder i deg og liker å spre trivsel til dine medstudenter, er trikom komiteen for deg!",
+      "info": "Trivselskomiteen har ansvaret for trivsel blant informatikkstudentene. Dette inkluderer å arrangere flere små arrangementer og hyggelige sammenkomster i løpet av året, og drift av kontoret.",
       "id": 0,
       "icon": "trikomIcon"
     },
     {
       "key": "comitee",
       "name": "Arrkom",
-      "info": "Arrangementskomiteen jobber for at informatikkstudentene skal ha sosiale tilbud gjennom hele året. Vi arrangerer velkjente arrangement som immatrikuleringsball, blåtur, Åre-tur, kryssfest, filmkvelder og mye mer! Liker du at andre skal ha det kult? Er du en sosial og sprudlende person selv? Da er kanskje Arrangementskomitéen stedet for deg!",
+      "info": "Arrangementskomiteen jobber for at informatikkstudentene skal ha sosiale tilbud gjennom hele året. Vi arrangerer velkjente arrangement som immatrikuleringsball, blåtur, Åre-tur, kryssfest, filmkvelder og mye mer!",
       "id": 1,
       "icon": "arrkomIcon"
     },
     {
       "key": "comitee",
       "name": "Bankom",
-      "info": "Bank- og økonomikomtiteen sørger for at det blir satt opp fornuftige budsjett og at de blir fulgt. Komiteen består av de økonmiansvarlige fra hver av de andre komiteene, en komiteeleder og en økonomiansvarlig for Online/Hovedstyret. Vi setter hvert år opp budsjett og fører månedlige regnskap. Ukentlige arbeidsoppgaver som fakturering og betaling av regninger hører også med i et verv i bankom. Er du interessert i økonomi, regnskap, kontroll og gode rutiner vil vi gjerne at du informerer oss om at du er interessert i et tilleggsverv som økonomiansvarlig!",
+      "info": "Bank- og økonomikomtiteen sørger for at det blir satt opp fornuftige budsjett og at de blir fulgt. Komiteen består av de økonomiansvarlige fra hver av de andre komiteene, en komiteeleder og en økonomiansvarlig for Online/Hovedstyret. Vi setter hvert år opp budsjett og fører månedlige regnskap.",
       "id": 2,
       "icon": "bankomIcon"
     },
     {
       "key": "comitee",
       "name": "Bedkom",
-      "info": "Bedriftskomiteen er bindeleddet mellom næringslivet og informatikkstudenter, og skal i tillegg samarbeide med andre linjeforeninger på NTNU for å ivareta informatikkstudentenes interesser. Som medlem vil du ha flere oppgaver, blant annet, å planlegge og arrangere bedriftspresentasjoner, legge ut annonser på våre nettsider, mm.  Gjennom bedriftskomiteen vil du opprette en tidlig og god kontakt med næringslivet og potensielle arbeidsgivere under studietiden, samtidig som du får et innblikk i hvordan bedrifter rekrutterer studenter.",
+      "info": "Bedriftskomiteen er bindeleddet mellom næringslivet og informatikkstudenter, og skal i tillegg samarbeide med andre linjeforeninger på NTNU for å ivareta informatikkstudentenes interesser.",
       "id": 3,
       "icon": "bedkomIcon"
     },
     {
       "key": "comitee",
       "name": "Dotkom",
-      "info": "Drifts- og utviklingskomiteen har ansvaret for alle linjeforeningens datasystemer. Vi leverer tjenester som nettside, wiki, e-postsystemer, filområder og mye annet spennende. I en stor linjeforening er informasjonsflyt og kvalitet viktig. Drifts- og utviklingskomiteen prøver hele tiden å lage smarte løsninger som holder en høy standard, slik som i en bedrift. Er du interessert i programmering, drifting eller teknologi generelt? Vi kan tilby et unikt verv i en meget sosial gjeng som driver med IT på høyt nivå. Ingen forkunnskaper er påkrevd annet enn stor lærevilje!",
+      "info": "Drifts- og utviklingskomiteen har ansvaret for alle linjeforeningens datasystemer. Vi leverer tjenester som nettside, wiki, e-postsystemer, filområder og mye annet spennende. I en stor linjeforening er informasjonsflyt og kvalitet viktig.",
       "id": 4,
       "icon": "dotkomIcon"
     },
     {
       "key": "comitee",
       "name": "Fagkom",
-      "info": "Fag- og kurskomiteen tilbyr kunnskap om ny og spennende teknologi, gjennom blant annet kurs og foredrag. Vår jobb er å stimulere studentenes faglige interesser. Vi oppsøker kompetansen i næringslivet, og samarbeider tett med bedriftskomiteen for å komme i kontakt med de aktuelle bedriftene. Som medlem av Fag- og kurskomiteen vil du få god innsikt i emner utenfor skolen, og samtidig knytte tettere bånd til din fremtidige arbeidsgiver.",
+      "info": "Fag- og kurskomiteen tilbyr kunnskap om ny og spennende teknologi, gjennom blant annet kurs og foredrag. Vår jobb er å stimulere studentenes faglige interesser.",
       "id": 6,
       "icon": "fagkomIcon"
     },
     {
       "key": "comitee",
       "name": "Prokom",
-      "info": "Profil- og aviskomiteen sørger for at Onlines ansikt utad er profesjonelt og konsistent. Alt profileringsmateriale som klær, annonser, brev og brosjyrer, plakater, medaljer og andre effekter lages av oss. Vi har også en redaksjon som er ansvarlig for linjeforeningens tidsskrift, Offline. Har du en designerspire eller en skribent i magen? Vi leter etter deg som er interessert i design, markedsføring, journalisme eller skriving!",
+      "info": "Profil- og aviskomiteen sørger for at Onlines ansikt utad er profesjonelt og konsistent. Alt profileringsmateriale som klær, annonser, brev og brosjyrer, plakater, medaljer og andre effekter lages av oss.",
       "id": 7,
       "icon": "prokomIcon"
     }
