@@ -4,23 +4,22 @@ import Tab from './tab';
 
 class Tabs extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
 
-        this.state= {
-            activeTab: this.props.children[0],
-        }
-
+        this.state = {
+            activeTab: this.props.children[0].props.label,
+        };
     }
 
 
     clickedTab = (tab) => {
-        this.setState({ activeTab: tab});
+        this.setState({ activeTab: tab });
     }
 
 
-    render(){
-        const{
+    render() {
+        const {
             clickedTab,
             props: {
                 children,
@@ -30,22 +29,23 @@ class Tabs extends Component {
             }
         } = this;
 
-        return(
+        return (
             <div className="divForTabsAndContent">
                 <ol className="tabs">
                     {children.map((child) => {
-                        const {label} = child.props;
-                        return(
-                            <Tab activeTab={activeTab} key ={label} label={label} onClick={clickedTab} />
+                        const { label } = child.props;
+                        return (
+                            <Tab activeTab={activeTab} key={label} label={label} onClick={clickedTab} />
                         )
                     })}
                 </ol>
                 <div className="content">
-                    
+                    {children.map((child) => {
+                        if (child.props.label !== activeTab) return undefined;
+                        return child.props.children;
+                    })}
                 </div>
             </div>
-
-
         );
     }
 }

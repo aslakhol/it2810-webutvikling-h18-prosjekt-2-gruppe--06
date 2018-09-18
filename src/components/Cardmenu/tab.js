@@ -1,32 +1,29 @@
 import React, { Component } from 'react';
 
-class Tab extends Component{
+class Tab extends Component {
 
 
-    onClick = () => {
-        const {label, onClick} = this.props;
+    onClick = () =>  {
+        const { label, onClick } = this.props;
         onClick(label);
     }
 
-    render(){
-        const{onClick, props:{
+    render() {
+        const { onClick, props: {
             activeTab, label,
         },
-    } = this;
+        } = this;
 
-    let className = "list-item";
+        let className = "list-item";
 
-    if(activeTab === label){
-        className += "active-tab";
-    }
+        if (activeTab === label) {
+            className += "active-tab";
+        }
 
-        return(
+        return (
             <li className={className} onClick={onClick}>
-            {label}
-            
+                {label}
             </li>
-
-
         );
     }
 }
