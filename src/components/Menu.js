@@ -6,8 +6,6 @@ class Menu extends Component {
         super(props)
     }
 
-    
-
     render() {
         return (
             <div id="menu">
@@ -15,7 +13,7 @@ class Menu extends Component {
                     title="Select Group"
                     categories={ this.props.categories.group.categories }
                     selected={ this.props.categories.group.selected }
-                    toggleItem={ this.props.toggleSelected}>
+                    toggleItem={ this.props.toggleSelected }>
                 </DropDownMenu>
 
                 <DropDownMenu
