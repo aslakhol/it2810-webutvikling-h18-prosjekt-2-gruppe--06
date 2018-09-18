@@ -1,16 +1,49 @@
 .dd-wrapper{
-    font-size: 10px;
+    
+    min-width: 300px;
+    margin: 20px 5% 20px 5%;
+
 }
 
 .dd-header{
     border: solid #454545 1px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em;
+}
+
+.dd-header-title{
+
 }
 
 .dd-list{
-    padding: 2em,3em,2em,4em;
+    list-style: none;
+    padding: 0;
+    border: solid #555555;
 }
 
-.menu{
+.dd-list-item{
+    position: relative;
+    font-size: 18px;
+    padding: 0.5em;
+    
+
+}
+
+.dd-list-item:hover{
+    background-color: #CCCCCC;
+}
+
+#menu{
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+
+.check{
+    position: absolute;
+    right: 2px;
+    
 }

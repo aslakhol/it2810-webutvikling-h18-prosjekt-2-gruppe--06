@@ -37,7 +37,7 @@ class DropDownMenu extends Component {
                     {categories.map((item) => (
                         <li className="dd-list-item" key={ item.name } onClick={ () => toggleItem(item.id, item.key) }>
                             { item.name }
-                            { item.id === selected && <FontAwesomeIcon icon="check" /> }
+                            { item.id === selected && <FontAwesomeIcon className="check" icon="check" /> }
                         </li>
                     ))}
                 </ul>}
