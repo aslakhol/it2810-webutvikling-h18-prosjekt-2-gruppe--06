@@ -9,13 +9,13 @@ import { faAngleUp, faAngleDown, faCheck } from '@fortawesome/free-solid-svg-ico
 import CardDisplay from './components/cardDisplay';
 import './style/index.css';
 import './style/cardDisplay.css';
+import MediaHandler from './components/MediaHandler';
 
 library.add(faAngleUp, faAngleDown, faCheck);
 const App = () => {
     return (
         <div>
-            <Menu />
-            <CardDisplay />
+            <MediaHandler />
         </div>
     );
 };

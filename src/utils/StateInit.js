@@ -19,7 +19,7 @@ const group = {
                 key: "group",
             },
         ],
-        selected: null,
+        selected: 0,
     }
 
 const sound = {
@@ -29,6 +29,7 @@ const sound = {
                 items: [],
                 id: 0,
                 key: "sound",
+                directory:"lazer"
 
             },
             {
@@ -36,15 +37,17 @@ const sound = {
                 items: [],
                 id: 1,
                 key: "sound",
+                directory: "powerup"
             },
             {
                 name: "pickup-coin",
                 items: [],
                 id: 2,
                 key: "sound",
+                directory:"coin"
             },
         ],
-        selected: null,
+        selected: 0,
     }
 
 const icon = {
@@ -54,6 +57,7 @@ const icon = {
                 items: [],
                 id: 0,
                 key: "icon",
+                directory:"arranging",
 
             },
             {
@@ -61,15 +65,17 @@ const icon = {
                 items: [],
                 id: 1,
                 key: "icon",
+                directory: "supporting",
             },
             {
                 name: "online-logoer",
                 items: [],
                 id: 2,
                 key: "icon",
+                directory: "online"
             },
         ],
-        selected: null,
+        selected: 0,
     }
 
 export { icon, sound, group } 
