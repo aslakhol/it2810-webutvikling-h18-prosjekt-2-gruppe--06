@@ -3,7 +3,7 @@ import { icon, sound, group } from './../../utils/StateInit';
 import Menu from '../Menu';
 import CardDisplay from '../cardDisplay';
 import { PATH } from './../../utils/constants';
-import Cardmenu from '../Cardmenu';
+import Cardmenu from '../cardMenu';
 
 class MediaHandler extends Component {
 
@@ -99,7 +99,7 @@ class MediaHandler extends Component {
                     categories={this.state.categories}
                     toggleSelected={this.toggleSelected.bind(this)}
     
-                     />
+                />
                 <Cardmenu 
                 initializeState={this.initializeStateOfCards.bind(this)}
                 ref= {instance => {this.child = instance }}
