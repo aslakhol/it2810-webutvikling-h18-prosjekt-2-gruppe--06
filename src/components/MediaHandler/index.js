@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import { icon, sound, group } from './../../utils/StateInit';
-import Menu from '../Menu';
+import { icon, sound, group } from '../../utils/initialState';
+import Menu from '../menu';
 import CardDisplay from '../cardDisplay';
 import { PATH } from './../../utils/constants';
 
 class MediaHandler extends Component {
-
     constructor(props) {
         super(props)
         this.state = {

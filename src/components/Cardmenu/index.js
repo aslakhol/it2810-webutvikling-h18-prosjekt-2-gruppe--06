@@ -1,7 +1,7 @@
 import React from 'react';
 import Tabs from './tabs';
 
-const Cardmenu = () => {
+const CardMenu = () => {
     return (
         <div className="menu">
             <h1>hello</h1>
@@ -20,4 +20,4 @@ const Cardmenu = () => {
     )
 }
 
-export default Cardmenu;
+export default CardMenu;
