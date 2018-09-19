@@ -46,9 +46,7 @@ class MediaHandler extends Component {
         this.child.deleteStates();
     }
 
-
-
-    fetchSVG() {
+    async fetchSVG() {
         const directory = (() => {
             const selected = this.state.categories.icon.selected;
             return "svg/" + this.state.categories.icon.categories[selected].directory;
@@ -56,18 +54,19 @@ class MediaHandler extends Component {
         })
         const random = Math.floor(Math.random() * 4);
         const path = PATH + directory() + "/" + random + ".svg";
-        return fetch(path)
+        return await fetch(path)
             .then(response => response.text())
 
     };
 
-    fetchText() {
+    async fetchText() {
         const group = (() => {
             const selected = this.state.categories.group.selected;
             return this.state.categories.group.categories[selected].name;
         });
         const path = PATH + 'text/' + group() + ".json";
-        return fetch(path)
+
+        return await fetch(path)
             .then(response => response.json())
             .then(responsejson => {
                 responsejson[Math.floor((Math.random() * responsejson.length))]
@@ -83,13 +82,13 @@ class MediaHandler extends Component {
         const path = "/public/" + directory() + "/" + random + ".wav";
         return path;
     }
-    initializeStateOfCards() {
+    
+    async initializeStateOfCards() {
         return {
-            image: this.fetchSVG(),
+            image: await this.fetchSVG(),
             sound: this.getSound(),
-            text: this.fetchText()
-    }        
-
+            text: await this.fetchText()
+        }
     }
 
     render() {
@@ -97,12 +96,12 @@ class MediaHandler extends Component {
             <div>
                 <Menu
                     categories={this.state.categories}
-                    toggleSelected={this.toggleSelected.bind(this)}
+                    toggleSelected={() => this.toggleSelected}
     
                 />
                 <Cardmenu 
-                initializeState={this.initializeStateOfCards.bind(this)}
-                ref= {instance => {this.child = instance }}
+                    initializeState={this.initializeStateOfCards.bind(this)}
+                    ref= {instance => {this.child = instance }}
                  />
                 {/* <CardDisplay
                     image={this.state.image}
