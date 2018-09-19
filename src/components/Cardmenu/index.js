@@ -1,23 +1,101 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Tabs from './tabs';
+import CardDisplay from '../cardDisplay';
 
-const Cardmenu = () => {
-    return (
-        <div className="menu">
-            <h1>hello</h1>
-            <Tabs>
-                <div label="test1">
-                    yo
-                </div>
-                <div label="test2">
-                    hallo
-                </div>
-                <div label="test3">
-                    heisann
-                </div>
-         </Tabs>
-        </div>
-    )
-}
 
-export default Cardmenu;
+class CardMenu extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+
+            cardStates: [
+                {
+                    image: null,
+                    svg: null,
+                    text: null
+                },
+                {
+                    image: null,
+                    svg: null,
+                    text: null
+                },
+                {
+                    image: null,
+                    svg: null,
+                    text: null
+                },
+                {
+                    image: null,
+                    svg: null,
+                    text: null
+                }
+            ]
+        }
+    }
+
+    initializeState(id){
+        const temporaryStateOfCards = this.state.cardStates.splice()
+        temporaryStateOfCards[id]=this.props.initializeState();
+        console.log(temporaryStateOfCards,"temporarystates")
+        this.setState({
+            cardStates: temporaryStateOfCards,
+        })
+    }
+
+    deleteStates(){
+        const temp = this.state.cardStates.splice();
+        temp.map(element =>{
+        
+            return({
+                    svg:null,
+                    sound: null,
+                    text: null
+                })
+            })
+        this.setState({
+            cardStates:temp,
+        })
+
+    }
+
+
+
+    render() {
+        return (
+            <div className="menu">
+                <h1>hello</h1>
+                <Tabs>
+                    <div label="test1">
+                        <CardDisplay
+                            id={0}
+                            initializeState={this.initializeState.bind(this)}
+                            media={this.state.cardStates[0]}
+                        />
+                    </div>
+                    <div label="test2">
+                        <CardDisplay
+                            id={1}
+                            initializeState={this.initializeState.bind(this)}
+                            media={this.state.cardStates[1]}
+                        />
+                    </div>
+                    <div label="test3">
+                        <CardDisplay
+                            id={2}
+                            initializeState={this.initializeState.bind(this)}
+                            media={this.state.cardStates[2]}
+                        />
+                    </div>
+                    <div label="test4">
+                        <CardDisplay
+                            id={3}
+                            initializeState={this.initializeState.bind(this)}
+                            media={this.state.cardStates[3]}
+                         />
+                       </div>
+                </Tabs>
+                    </div>
+                    )
+                }
+            }
+            export default CardMenu;

@@ -3,6 +3,7 @@ import { icon, sound, group } from './../../utils/StateInit';
 import Menu from '../Menu';
 import CardDisplay from '../cardDisplay';
 import { PATH } from './../../utils/constants';
+import Cardmenu from '../Cardmenu';
 
 class MediaHandler extends Component {
 
@@ -30,18 +31,22 @@ class MediaHandler extends Component {
     }
 
     handleChange(key) {
-        switch(key){
-        case "icon":
-            this.fetchSVG();
-            break;
-        case "group":
-            this.fetchText();
-            break;
-        case "sound":
-            this.getSound();
-            break;
+        switch (key) {
+            case "icon":
+                this.fetchSVG();
+                break;
+            case "group":
+                this.fetchText();
+                break;
+            case "sound":
+                this.getSound();
+                break;
+
         }
+        this.child.deleteStates();
     }
+
+
 
     fetchSVG() {
         const directory = (() => {
@@ -51,9 +56,9 @@ class MediaHandler extends Component {
         })
         const random = Math.floor(Math.random() * 4);
         const path = PATH + directory() + "/" + random + ".svg";
-        fetch(path)
+        return fetch(path)
             .then(response => response.text())
-            .then(svg => this.setState({ image: svg }));
+
     };
 
     fetchText() {
@@ -62,12 +67,10 @@ class MediaHandler extends Component {
             return this.state.categories.group.categories[selected].name;
         });
         const path = PATH + 'text/' + group() + ".json";
-        fetch(path)
+        return fetch(path)
             .then(response => response.json())
             .then(responsejson => {
-                this.setState({
-                    comiteetext: responsejson[Math.floor((Math.random() * responsejson.length))]
-                })
+                responsejson[Math.floor((Math.random() * responsejson.length))]
             });
     };
 
@@ -78,21 +81,35 @@ class MediaHandler extends Component {
         })
         const random = Math.floor(Math.random() * 4);
         const path = "/public/" + directory() + "/" + random + ".wav";
-        this.setState({ soundpath: path });
+        return path;
+    }
+    initializeStateOfCards() {
+        return {
+            image: this.fetchSVG(),
+            sound: this.getSound(),
+            text: this.fetchText()
+    }        
+
     }
 
     render() {
         return (
             <div>
                 <Menu
-                    categories={ this.state.categories }
-                    toggleSelected={ this.toggleSelected.bind(this) } />
-                <CardDisplay
-                    image={ this.state.image }
-                    comiteeText={ this.state.comiteetext ? this.state.comiteetext.info : null }
-                    comiteeName={ this.state.comiteetext ? this.state.comiteetext.name : null }
-                    soundPath={ this.state.soundpath }
-                />
+                    categories={this.state.categories}
+                    toggleSelected={this.toggleSelected.bind(this)}
+    
+                     />
+                <Cardmenu 
+                initializeState={this.initializeStateOfCards.bind(this)}
+                ref= {instance => {this.child = instance }}
+                 />
+                {/* <CardDisplay
+                    image={this.state.image}
+                    comiteeText={this.state.comiteetext ? this.state.comiteetext.info : null}
+                    comiteeName={this.state.comiteetext ? this.state.comiteetext.name : null}
+                    soundPath={this.state.soundpath}
+                /> */}
             </div>
         )
     }
