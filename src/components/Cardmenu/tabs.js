@@ -20,7 +20,7 @@ class Tabs extends Component {
       const activeChild =  children.find(child => {
             return child.props.label=={activeTab}
         });
-        return activeChild.id;
+        return activeChild.props.children[0].id;
     }
 
     render() {

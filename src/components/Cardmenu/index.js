@@ -34,6 +34,7 @@ class CardMenu extends Component {
     }
 
      async initializeState(id){
+        this.child.getActiveTabID;
         const temporaryStateOfCards = this.state.cardStates.slice();
         temporaryStateOfCards[id]= await this.props.initializeState();
         this.setState({
@@ -62,7 +63,7 @@ class CardMenu extends Component {
         return (
             <div className="menu">
                 <h1>hello</h1>
-                <Tabs>
+                <Tabs  ref={instance => {this.child = instance }}>
                     <div label="test1">
                         <CardDisplay
                             id={0}

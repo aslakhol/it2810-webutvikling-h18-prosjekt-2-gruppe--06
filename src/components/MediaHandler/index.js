@@ -31,7 +31,7 @@ class MediaHandler extends Component {
     }
 
     handleChange(key) {
-        this.child.deleteStates;
+        this.child.deleteStates();
         this.child.initializeState(0);
     }
 
