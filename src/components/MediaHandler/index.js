@@ -3,7 +3,7 @@ import { icon, sound, group } from './../../utils/StateInit';
 import Menu from '../Menu';
 import CardDisplay from '../cardDisplay';
 import { PATH } from './../../utils/constants';
-import Cardmenu from '../cardMenu';
+import CardMenu from '../Cardmenu'
 
 class MediaHandler extends Component {
 
@@ -31,19 +31,8 @@ class MediaHandler extends Component {
     }
 
     handleChange(key) {
-        switch (key) {
-            case "icon":
-                this.fetchSVG();
-                break;
-            case "group":
-                this.fetchText();
-                break;
-            case "sound":
-                this.getSound();
-                break;
-
-        }
-        this.child.deleteStates();
+        this.child.deleteStates;
+        this.child.initializeState(0);
     }
 
     async fetchSVG() {
@@ -69,7 +58,7 @@ class MediaHandler extends Component {
         return await fetch(path)
             .then(response => response.json())
             .then(responsejson => {
-                responsejson[Math.floor((Math.random() * responsejson.length))]
+                return responsejson[Math.floor((Math.random() * responsejson.length))]
             });
     };
 
@@ -84,10 +73,14 @@ class MediaHandler extends Component {
     }
     
     async initializeStateOfCards() {
-        return {
+        const textObject=await this.fetchText() 
+        
+        return await {
             image: await this.fetchSVG(),
             sound: this.getSound(),
-            text: await this.fetchText()
+            text: textObject.info,
+            title: textObject.name,
+
         }
     }
 
@@ -96,10 +89,10 @@ class MediaHandler extends Component {
             <div>
                 <Menu
                     categories={this.state.categories}
-                    toggleSelected={() => this.toggleSelected}
+                    toggleSelected={this.toggleSelected.bind(this)}
     
                 />
-                <Cardmenu 
+                <CardMenu 
                     initializeState={this.initializeStateOfCards.bind(this)}
                     ref= {instance => {this.child = instance }}
                  />

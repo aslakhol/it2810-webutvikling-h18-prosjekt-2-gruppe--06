@@ -33,20 +33,18 @@ class CardMenu extends Component {
         }
     }
 
-    initializeState(id){
-        const temporaryStateOfCards = this.state.cardStates.splice()
-        temporaryStateOfCards[id]=this.props.initializeState();
-        console.log(temporaryStateOfCards,"temporarystates")
+     async initializeState(id){
+        const temporaryStateOfCards = this.state.cardStates.slice();
+        temporaryStateOfCards[id]= await this.props.initializeState();
         this.setState({
             cardStates: temporaryStateOfCards,
         })
     }
 
     deleteStates(){
-        const temp = this.state.cardStates.splice();
+        const temp = this.state.cardStates.slice();
         temp.map(element =>{
-        
-            return({
+            ({
                     svg:null,
                     sound: null,
                     text: null

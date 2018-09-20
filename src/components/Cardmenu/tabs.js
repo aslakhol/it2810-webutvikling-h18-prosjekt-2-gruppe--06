@@ -13,6 +13,16 @@ class Tabs extends Component {
         this.setState({ activeTab: tab });
     }
 
+    getActiveTabID(){
+      const { children } = this.props;
+      const { activeTab } = this.state;
+
+      const activeChild =  children.find(child => {
+            return child.props.label=={activeTab}
+        });
+        return activeChild.id;
+    }
+
     render() {
         const { children } = this.props;
         const { activeTab } = this.state;
