@@ -33,27 +33,32 @@ class CardMenu extends Component {
         }
     }
 
-     async initializeState(id){
-        this.child.getActiveTabID;
+    async initializeState(id) {
+        if (this.child) {
+           id = this.child.getActiveTabID();
+           console.log(id,"this is the id")
+        }
         const temporaryStateOfCards = this.state.cardStates.slice();
-        temporaryStateOfCards[id]= await this.props.initializeState();
+        temporaryStateOfCards[id] = await this.props.initializeState();
         this.setState({
             cardStates: temporaryStateOfCards,
         })
     }
 
-    deleteStates(){
+    deleteStates() {
         const temp = this.state.cardStates.slice();
-        temp.map(element =>{
-            ({
-                    svg:null,
-                    sound: null,
-                    text: null
-                })
-            })
+        temp.map(element => {
+            return (
+            {
+                svg: null,
+                sound: null,
+                text: null
+            });
+        });
         this.setState({
-            cardStates:temp,
+            cardStates: temp,
         })
+
 
     }
 
@@ -63,7 +68,7 @@ class CardMenu extends Component {
         return (
             <div className="menu">
                 <h1>hello</h1>
-                <Tabs  ref={instance => {this.child = instance }}>
+                <Tabs ref={instance => { this.child = instance }}>
                     <div label="test1">
                         <CardDisplay
                             id={0}
@@ -90,11 +95,11 @@ class CardMenu extends Component {
                             id={3}
                             initializeState={this.initializeState.bind(this)}
                             media={this.state.cardStates[3]}
-                         />
-                       </div>
-                </Tabs>
+                        />
                     </div>
-                    )
-                }
-            }
-            export default CardMenu;
+                </Tabs>
+            </div>
+        )
+    }
+}
+export default CardMenu;
