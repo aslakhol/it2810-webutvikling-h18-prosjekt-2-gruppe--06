@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import DropDownMenu from '../dropDownMenu'
+import React from 'react';
+import DropDownMenu from '../dropDownMenu';
 
 const Menu = (props) => {
     return (
