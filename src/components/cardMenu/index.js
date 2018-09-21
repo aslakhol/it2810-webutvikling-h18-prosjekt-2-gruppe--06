@@ -65,30 +65,29 @@ class CardMenu extends Component {
     render() {
         return (
             <div className="menu">
-                <h1>hello</h1>
                 <Tabs ref={instance => { this.child = instance }}>
-                    <div label="test1">
+                    <div label="Version 1">
                         <CardDisplay
                             id={0}
                             initializeState={this.initializeState.bind(this)}
                             media={this.state.cardStates[0]}
                         />
                     </div>
-                    <div label="test2">
+                    <div label="Version 2">
                         <CardDisplay
                             id={1}
                             initializeState={this.initializeState.bind(this)}
                             media={this.state.cardStates[1]}
                         />
                     </div>
-                    <div label="test3">
+                    <div label="Version 3">
                         <CardDisplay
                             id={2}
                             initializeState={this.initializeState.bind(this)}
                             media={this.state.cardStates[2]}
                         />
                     </div>
-                    <div label="test4">
+                    <div label="Version 4">
                         <CardDisplay
                             id={3}
                             initializeState={this.initializeState.bind(this)}

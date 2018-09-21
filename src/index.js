@@ -7,6 +7,7 @@ import { faAngleUp, faAngleDown, faCheck } from '@fortawesome/free-solid-svg-ico
 import './style/index.css';
 import './style/dropDown.css';
 import './style/cardDisplay.css';
+import './style/cardMenu.css';
 
 import registerServiceWorker from './utils/registerServiceWorker';
 import MediaHandler from './components/mediaHandler';
