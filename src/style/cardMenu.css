@@ -3,7 +3,7 @@
     margin: auto;
 }
 
-.tabs{
+.tabs {
     -webkit-user-select: none;
     width: 60vw;
     margin: auto;
@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.list-item{
+.list-item {
     cursor: pointer;
     color: rgb(255, 255, 255);
     background: rgb(250,162,27);
@@ -22,13 +22,13 @@
     -webkit-user-select: none;
 }
 
-.active-tab{
+.active-tab {
     -webkit-user-select: none;
     background: #b7740e;
     color: rgb(255, 255, 255);
 }
 
-.content{
+.content {
     width: 60vw;
     margin: auto;
     text-align: center;

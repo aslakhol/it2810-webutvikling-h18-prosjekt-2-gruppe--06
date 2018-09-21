@@ -1,11 +1,11 @@
-.dd-wrapper{
+.dd-wrapper {
     min-width: 250px;
     margin: 20px 5% 20px 5%;
     color: rgb(0,0,0);
     cursor: pointer;
 }
 
-.dd-header{
+.dd-header {
     border: solid #454545 1px;
     border-radius: 10px;
     max-width: 100%;
@@ -17,7 +17,7 @@
     -webkit-user-select: none;
 }
 
-.dd-list{
+.dd-list {
     list-style: none;
     padding: 0;
     border: solid #555555;
@@ -25,23 +25,57 @@
     -webkit-user-select: none;
 }
 
-.dd-list-item{
+.dd-list-item {
     position: relative;
     font-size: 18px;
     padding: 0.5em;
+    max-height: 33%;
 }
 
-.dd-list-item:hover{
+.dd-list-item:hover {
     background-color: #CCCCCC;
 }
 
-#menu{
+#menu {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-.check{
+.check {
     position: absolute;
     right: 2px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .dd-wrapper {
+        min-width:150px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #menu {
+        flex-flow: column;
+        align-items: center;
+        margin-top: 4px;
+    }
+
+    .dd-wrapper {
+        margin: 2px;
+        width: 70%;
+    }
+
+    .dd-header {
+        padding: 1px;
+    }
+
+    .dd-list-item {
+        font-size:12px;
+        padding:0.2em;
+        text-align: center;
+    }
+
+    .dd-list {
+        margin: 0;
+    }
 }
