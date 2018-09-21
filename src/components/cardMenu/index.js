@@ -59,7 +59,7 @@ class CardMenu extends Component {
 
         this.setState({
             cardStates: temp,
-        }, () => {return ""}) // This is a hack for awaiting set state
+        }, () => { return "" }) // This is a hack for awaiting set state
     }
 
     render() {
