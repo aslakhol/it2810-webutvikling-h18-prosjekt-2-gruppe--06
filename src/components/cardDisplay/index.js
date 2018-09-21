@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Graphic from './../graphic';
 import Sound from './../sound';
 import TextDisplay from '../textDisplay';
@@ -7,12 +7,12 @@ class CardDisplay extends Component {
     constructor(props) {
         super(props)
     }
-    
-    componentWillMount(){
-       if(!this.props.media.text){
-          this.props.initializeState(this.props.id)
-       } 
-    }    
+
+    componentWillMount() {
+        if (!this.props.media.text) {
+            this.props.initializeState(this.props.id)
+        }
+    }
 
     render() {
         return (

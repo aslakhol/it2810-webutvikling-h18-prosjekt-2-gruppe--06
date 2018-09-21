@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Sound = (props) => {
-    return (  
+    return (
         <div className="sound">
-            <audio src={ props.soundpath } autoPlay type="audio/wav"></audio>
+            <audio src={props.soundpath} autoPlay type="audio/wav"></audio>
         </div>
     );
 }
- 
+
 export default Sound;
