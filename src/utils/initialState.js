@@ -25,11 +25,11 @@ const group = {
 const sound = {
         categories: [
             {
-                name: "lazer",
+                name: "laser",
                 items: [],
                 id: 0,
                 key: "sound",
-                directory:"lazer"
+                directory:"laser"
 
             },
             {
