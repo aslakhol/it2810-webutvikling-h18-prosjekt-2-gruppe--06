@@ -1,13 +1,22 @@
 .dd-wrapper{
-    min-width: 300px;
+    min-width: 250px;
     margin: 20px 5% 20px 5%;
+    color: rgb(0,0,0);
+    cursor: pointer;
+
 }
 
 .dd-header{
     border: solid #454545 1px;
     border-radius: 10px;
+    max-width: 100%;
+    height: auto;
     text-align: center;
     padding: 1em;
+    color: rgb(255,255,255);
+    background: rgb(250,162,27);
+    -webkit-user-select: none;
+
 }
 
 .dd-header-title{
@@ -18,6 +27,8 @@
     list-style: none;
     padding: 0;
     border: solid #555555;
+    background: rgb(255,255,255);
+    -webkit-user-select: none;
 }
 
 .dd-list-item{

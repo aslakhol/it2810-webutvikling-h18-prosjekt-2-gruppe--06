@@ -20,7 +20,7 @@ class MediaHandler extends Component {
     }
 
     toggleSelected(id, key) {
-        let temporaryStateOfKey = this.state.categories[key]; 
+        let temporaryStateOfKey = this.state.categories[key];
         temporaryStateOfKey.selected = id;
         this.setState({
             [key]: temporaryStateOfKey
@@ -59,18 +59,18 @@ class MediaHandler extends Component {
     };
 
     getSound() {
-        const directory = ( () => {
+        const directory = (() => {
             const selected = this.state.categories.sound.selected;
             return this.state.categories.sound.categories[selected].directory;
         })
         const random = Math.floor(Math.random() * 4);
-        const path = "/public/" + directory() + "/" + random + ".wav";
+        const path = "/sound/" + directory() + "/" + random + ".wav";
         return path;
     }
-    
+
     async initializeStateOfCards() {
-        const textObject=await this.fetchText() 
-        
+        const textObject = await this.fetchText()
+
         return await {
             image: await this.fetchSVG(),
             sound: this.getSound(),
@@ -86,10 +86,10 @@ class MediaHandler extends Component {
                     categories={this.state.categories}
                     toggleSelected={this.toggleSelected.bind(this)}
                 />
-                <CardMenu 
+                <CardMenu
                     initializeState={this.initializeStateOfCards.bind(this)}
-                    ref= {instance => {this.child = instance }}
-                 />
+                    ref={instance => { this.child = instance }}
+                />
             </div>
         )
     }
