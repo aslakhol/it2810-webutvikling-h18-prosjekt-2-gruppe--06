@@ -74,12 +74,15 @@ We have developed the application with a goal in mind to end up with a responsiv
 We did not use mobile-first development - but since we encountered some obstacles in the development phase we have decided to use mobile-first development for the next project, since we that way will get through some of the bigger obstacles early in the development phase. 
 
 **Scaling**
+
 We have enabled the SVG-elements to scale according to screen size. 
 
 **ViewPort**
+
 Viewport is implemented in the generated HTML-file. Viewport has enabled us to design an application which is responsive - where the width, height and size of elements is automatically set according to the size of the device beeing used. 
 
 **Flexbox**
+
 Flex is a set of rules, which allows the developer to automatically stretch columns and rows of content across parent containers. We have used flex in our  dropdown menu. 
 
 ### Testing
