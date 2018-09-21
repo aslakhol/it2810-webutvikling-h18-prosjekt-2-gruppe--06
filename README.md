@@ -67,7 +67,7 @@ This is not true caching, as all objects are lost on refresh. However we believe
 ### Fetch
 We chose to use fetch for our AJAX-operations. We chose over other frameworks like axios and Jquery's XMLHTTPrequest  since it was easy to get started and it's simpler to work with promises than callbacks.  
 
-### Responsive Web Design
+## Responsive Web Design
 
 We have developed the application with a goal in mind to end up with a responsive application that adapts to different screensizes. Since mobile units and different web-browsers and computerscreens vary. In order to achieve satisfying user-experience we have made the applications 
 
@@ -85,7 +85,7 @@ Viewport is implemented in the generated HTML-file. Viewport has enabled us to d
 
 Flex is a set of rules, which allows the developer to automatically stretch columns and rows of content across parent containers. We have used flex in our  dropdown menu. 
 
-### Testing
+## Testing
 
 To fulfill the demands of testing that was asked for this assignment, we chose to test the web-application on three different device sizes. These were Apple iPhone 6 standard size (1334x750) and desktop size (1920x1080).
 To test it on these different devices we made a temporary web-server using ngrok.com.
@@ -93,7 +93,7 @@ To test it on these different devices we made a temporary web-server using ngrok
 As said above we did not use mobile-first development which resulted in having to fix a few issues as the web-application did not scale properly to smaller device screen sizes in the beginning. This however did not take long to fix, but in retrospect it would have been a good idea to at least test the application earlier and more often on different screen sizes.
 
 
-### Cooperation
+## Cooperation
 
 Throughout this project we have cooperated as a team, with good communication and plenty of hours together coding alongside each other. Even though we got a new member on or group towards the end, he managed to catch up and contribute. 
 
