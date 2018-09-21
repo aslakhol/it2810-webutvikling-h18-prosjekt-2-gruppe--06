@@ -9,25 +9,25 @@ class CardMenu extends Component {
             cardStates: [
                 {
                     image: null,
-                    svg: null,
+                    soundPath: null,
                     text: null,
                     title: null,
                 },
                 {
                     image: null,
-                    svg: null,
+                    soundPath: null,
                     text: null,
                     title: null,
                 },
                 {
                     image: null,
-                    svg: null,
+                    soundPath: null,
                     text: null,
                     title: null,
                 },
                 {
                     image: null,
-                    svg: null,
+                    soundPath: null,
                     text: null,
                     title: null,
                 }
@@ -51,7 +51,7 @@ class CardMenu extends Component {
             return (
                 {
                     svg: null,
-                    sound: null,
+                    soundPath: null,
                     text: null,
                     title: null,
                 });
@@ -59,7 +59,7 @@ class CardMenu extends Component {
 
         this.setState({
             cardStates: temp,
-        }, () => { return "" }) // This is a hack for awaiting set state
+        }, () => { return true }) // This is a hack for awaiting set state please forgive me. 
     }
 
     render() {

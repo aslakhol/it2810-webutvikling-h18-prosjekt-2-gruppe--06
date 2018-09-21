@@ -1,11 +1,11 @@
 .menu {
     width: 65%;
     margin: auto;
-    background: 033A7F;
 }
 
 .tabs {
-    width: 100%;
+    -webkit-user-select: none;
+    width: 60vw;
     margin: auto;
     display: table;
     padding-left: 0;
@@ -13,7 +13,9 @@
 }
 
 .list-item {
-    background: lightgray;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: rgb(250,162,27);
     display: table-cell;
     vertical-align: middle;
     height: 3em;
@@ -21,12 +23,13 @@
 }
 
 .active-tab {
-    background: grey;
-    color: rgb(243, 199, 134);
+    -webkit-user-select: none;
+    background: #b7740e;
+    color: rgb(255, 255, 255);
 }
 
 .content {
-    width: 100%;
+    width: 60vw;
     margin: auto;
     text-align: center;
 }
