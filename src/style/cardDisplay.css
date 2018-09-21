@@ -1,4 +1,13 @@
 .card-display {
     border: solid lightslategray;
-    padding: 50px;
+    padding: auto;
+    padding: 20px 30px 20px 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background: rgb(245,245,245);
 }
+
+
+
+
+
