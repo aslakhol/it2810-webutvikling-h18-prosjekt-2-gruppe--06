@@ -10,4 +10,6 @@
 .graphic {
     max-width: 25%;
     width: auto;
+    display: block;
+    margin: auto;
 }
