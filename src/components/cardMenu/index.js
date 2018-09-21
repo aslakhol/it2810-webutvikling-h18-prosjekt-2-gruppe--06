@@ -38,14 +38,12 @@ class CardMenu extends Component {
     async initializeState(id) {
         if (this.child) {
             id = this.child.getActiveTabID();
-            console.log(id, "this is the id")
         }
         const temporaryStateOfCards = this.state.cardStates.slice();
         temporaryStateOfCards[id] = await this.props.initializeState();
         this.setState({
             cardStates: temporaryStateOfCards,
         })
-        console.log(this.state, "afterInitialize")
     }
 
     async deleteStates() {

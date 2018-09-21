@@ -16,16 +16,10 @@ class Tabs extends Component {
     getActiveTabID(){
       const { children } = this.props;
       const { activeTab } = this.state;
-      console.log(children);;
 
-      const activeChild =  children.find(child => {
-            console.log(child.props.label,"this is label of child xP")
-
-            console.log({activeTab},"this is label of active xP")
-
+      const activeChild = children.find(child => {
             return child.props.label==activeTab
         });
-        console.log(activeChild.props.children, "this is the active child")
     
         return activeChild.props.children.props.id;
     }
