@@ -47,7 +47,7 @@ class MediaHandler extends Component {
     async fetchText() {
         const group = (() => {
             const selected = this.state.categories.group.selected;
-            return this.state.categories.group.categories[selected].name;
+            return this.state.categories.group.categories[selected].name.toLowerCase();
         });
         const path = PATH + 'text/' + group() + ".json";
 
