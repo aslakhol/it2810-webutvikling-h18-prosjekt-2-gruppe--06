@@ -1,13 +1,13 @@
 .card-display {
     border: solid lightslategray;
     padding: auto;
-    padding: 20px 30px 20px 30px;
-    margin-left: 70px;
-    margin-right: 70px;
+    padding: 5vw 8vw 5vw 8vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
     background: rgb(245,245,245);
 }
 
 .graphic {
-    max-width: 25%;
+    max-width: 22vw;
     width: auto;
 }
