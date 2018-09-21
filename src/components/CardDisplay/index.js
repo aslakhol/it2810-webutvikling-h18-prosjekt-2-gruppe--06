@@ -20,6 +20,7 @@ class CardDisplay extends Component {
 
     render() {
         return (
+            <div className="card-display">
                 <TextDisplay description={this.props.media.text} name={this.props.media.title} />
                 <Graphic image={this.props.media.image} />
                 <Sound 
