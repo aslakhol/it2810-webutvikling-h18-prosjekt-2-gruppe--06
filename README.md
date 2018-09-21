@@ -1,5 +1,8 @@
 # Business-Card Generator 
 
+Public URL:
+http://it2810-06.idi.ntnu.no/prosjekt2/
+
 ## How to set up 
 
 
