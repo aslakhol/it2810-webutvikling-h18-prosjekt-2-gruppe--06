@@ -1,16 +1,28 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Graphic from './../graphic';
 import Sound from './../sound';
 import TextDisplay from '../textDisplay';
 
-const CardDisplay = (props) => {
-    return (
-        <div className="card-display">
-            <TextDisplay description={ props.comiteeText } name={ props.comiteeName }/>
-            <Graphic image={ props.image } />
-            <Sound soundpath={ props.soundPath } />
-        </div>
-    );
-};
+class CardDisplay extends Component {
+    constructor(props) {
+        super(props)
+    }
+    
+    componentWillMount(){
+       if(!this.props.media.text){
+          this.props.initializeState(this.props.id)
+       } 
+    }    
 
-export default CardDisplay; 
+    render() {
+        return (
+            <div className="card-display">
+                <TextDisplay description={this.props.media.text} name={this.props.media.title} />
+                <Graphic image={this.props.media.image} />
+                <Sound soundpath={this.props.media.soundPath} />
+            </div>
+        );
+    }
+}
+
+export default CardDisplay;

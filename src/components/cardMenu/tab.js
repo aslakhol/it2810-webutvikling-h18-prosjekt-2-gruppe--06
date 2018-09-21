@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Tab extends Component {
-    onClick = () =>  {
+    onClick = () => {
         const { label, onClick } = this.props;
         onClick(label);
     }
@@ -15,8 +15,8 @@ class Tab extends Component {
         }
 
         return (
-            <li className={ className } onClick={ this.onClick }>
-                { label }
+            <li className={className} onClick={this.onClick}>
+                {label}
             </li>
         );
     }
