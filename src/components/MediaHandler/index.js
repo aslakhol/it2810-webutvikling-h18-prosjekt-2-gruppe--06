@@ -12,7 +12,7 @@ class MediaHandler extends Component {
         this.state = {
             categories: {
                 icon: icon,
-                sound: sound,
+                sound: sound, //these are objects defined in utils/initstate.js
                 group: group,
             },
             image: null,
@@ -22,17 +22,17 @@ class MediaHandler extends Component {
     }
 
     toggleSelected(id, key) {
-        let temporaryStateOfKey = this.state.categories[key];
+        let temporaryStateOfKey = this.state.categories[key]; 
         temporaryStateOfKey.selected = id;
         this.setState({
             [key]: temporaryStateOfKey
         })
-        this.handleChange(key);
+        this.handleChange();
     }
 
-    handleChange(key) {
-        this.child.deleteStates();
-        this.child.initializeState(0);
+    async handleChange() {
+        await this.child.deleteStates(); //null all the states
+        this.child.initializeState(); //initialize the state of selected tab
     }
 
     async fetchSVG() {
@@ -58,7 +58,6 @@ class MediaHandler extends Component {
         return await fetch(path)
             .then(response => response.json())
             .then(responsejson => {
-                console.log(responsejson[Math.floor((Math.random() * responsejson.length))],"the randostuff");
                 return responsejson[Math.floor((Math.random() * responsejson.length))]
             });
     };

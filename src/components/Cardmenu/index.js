@@ -12,22 +12,26 @@ class CardMenu extends Component {
                 {
                     image: null,
                     svg: null,
-                    text: null
+                    text: null,
+                    title: null,
                 },
                 {
                     image: null,
                     svg: null,
-                    text: null
+                    text: null,
+                    title: null,
                 },
                 {
                     image: null,
                     svg: null,
-                    text: null
+                    text: null,
+                    title: null,
                 },
                 {
                     image: null,
                     svg: null,
-                    text: null
+                    text: null,
+                    title: null,
                 }
             ]
         }
@@ -35,29 +39,31 @@ class CardMenu extends Component {
 
     async initializeState(id) {
         if (this.child) {
-           id = this.child.getActiveTabID();
-           console.log(id,"this is the id")
+            id = this.child.getActiveTabID();
+            console.log(id, "this is the id")
         }
         const temporaryStateOfCards = this.state.cardStates.slice();
         temporaryStateOfCards[id] = await this.props.initializeState();
         this.setState({
             cardStates: temporaryStateOfCards,
         })
+        console.log(this.state, "afterInitialize")
     }
 
-    deleteStates() {
-        const temp = this.state.cardStates.slice();
-        temp.map(element => {
+    async deleteStates() {
+        const temp = this.state.cardStates.map(element => {
             return (
-            {
-                svg: null,
-                sound: null,
-                text: null
-            });
+                {
+                    svg: null,
+                    sound: null,
+                    text: null,
+                    title: null,
+                });
         });
+
         this.setState({
             cardStates: temp,
-        })
+        }, ()=> {return ""}) //This is a hack for awaiting set state
 
 
     }
