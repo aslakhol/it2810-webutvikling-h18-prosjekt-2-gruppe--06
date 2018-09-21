@@ -49,7 +49,9 @@ The text is separated in three different json files, one for each category. This
 The SVGs are loaded separately when needed. We insert the image using the built in function dangerouslySetInnerHTML, which is generally considered bad practice, but since we are in full control over what is loaded, it is not a security issue. 
 
 ### Caching
-As mentioned above our files are loaded separately when needed and not reloaded when you switch tabs. CardMenu holds the states of the different cards and passes them the media as props, when it a CardDisplay notices that its media is null, it calls initialize state which makes the webcalls. When a category is changed, all cardstates are set to `null`. This means that a picture might be loaded, twice if the category is changed. The project description was a bit unclear    
+For caching we have made use of reacts states using in-memory objects. Our files are fetched separately when needed and not reloaded when you switch tabs. CardMenu holds the states of the different cards and passes them the media as props, when it a CardDisplay detects that its media is null, it calls initialize state which makes the webcalls to fetch the assets. When a category is changed all cardstates are set to `null`. 
+
+This is not true caching, as all objects are lost on refresh. However we believe it is sufficient for the requirement of only fetching assets when neccessary"
 
 ### Fetch
 We chose to use fetch for our AJAX-operations. We chose over other frameworks like axios and Jquery's XMLHTTPrequest  since it was easy to get started and it's simpler to work with promises than callbacks.  
@@ -68,7 +70,6 @@ As said above we did not use mobile-first development which resulted in having t
 Throughout this project we have cooperated as a team, with good communication and plenty of hours together coding alongside each other. Even though we got a new member on or group towards the end, he managed to catch up and contribute. 
 
 Git makes it easy to cooperate with built in version-control. Throughout the project we worked on different branches to add different functionality. When we pushed to master, at least one other member on the group had to do a thorough code review and be pleased with the committed code before the pull request was merged to master.
-
 
 
 ### Conclusion?
