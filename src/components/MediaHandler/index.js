@@ -73,7 +73,7 @@ class MediaHandler extends Component {
 
         return await {
             image: await this.fetchSVG(),
-            sound: this.getSound(),
+            soundPath: this.getSound(),
             text: textObject.info,
             title: textObject.name,
         }

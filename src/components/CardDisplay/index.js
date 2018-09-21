@@ -14,12 +14,17 @@ class CardDisplay extends Component {
         }
     }
 
+    onClick = () =>{
+       document.getElementsByClassName("sound")[0].play()
+    }
+
     render() {
         return (
-            <div className="card-display">
                 <TextDisplay description={this.props.media.text} name={this.props.media.title} />
                 <Graphic image={this.props.media.image} />
-                <Sound soundpath={this.props.media.soundPath} />
+                <Sound 
+                 ref = {instance =>{this.child = instance}}
+                 soundpath={this.props.media.soundPath}/>
             </div>
         );
     }
