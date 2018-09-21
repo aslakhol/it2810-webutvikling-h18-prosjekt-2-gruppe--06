@@ -22,6 +22,7 @@ clone the repository.
 
 `npm install`  
 `npm run build`  
+`rm -rf /var/www/html/prosjekt2/`  
 `sudo mv build /var/www/html/prosjekt2`  
 
 
