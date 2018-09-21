@@ -64,7 +64,7 @@ class MediaHandler extends Component {
             return this.state.categories.sound.categories[selected].directory;
         })
         const random = Math.floor(Math.random() * 4);
-        const path = "/sound/" + directory() + "/" + random + ".wav";
+        const path = PATH + "/sound/" + directory() + "/" + random + ".wav";
         return path;
     }
 
