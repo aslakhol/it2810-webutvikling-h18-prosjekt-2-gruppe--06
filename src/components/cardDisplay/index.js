@@ -13,6 +13,4 @@ const CardDisplay = (props) => {
     );
 };
 
-export default CardDisplay;
-
-
+export default CardDisplay; 

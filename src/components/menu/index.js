@@ -22,14 +22,14 @@ class Menu extends Component {
                     selected={ this.props.categories.sound.selected }
                     toggleItem={ this.props.toggleSelected }>
                 </DropDownMenu>
-
+                
                 <DropDownMenu
                     title="Select Icon"
                     categories={ this.props.categories.icon.categories }
                     selected={ this.props.categories.icon.selected }
                     toggleItem={ this.props.toggleSelected }>
                 </DropDownMenu>
-            </div>
+           </div>
         );
     }
 }

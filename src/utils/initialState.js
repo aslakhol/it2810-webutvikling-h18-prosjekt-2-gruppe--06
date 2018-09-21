@@ -19,7 +19,7 @@ const group = {
                 key: "group",
             },
         ],
-        selected: null,
+        selected: 0,
     }
 
 const sound = {
@@ -47,7 +47,7 @@ const sound = {
                 directory:"coin"
             },
         ],
-        selected: null,
+        selected: 0,
     }
 
 const icon = {
@@ -75,7 +75,7 @@ const icon = {
                 directory: "online"
             },
         ],
-        selected: null,
+        selected: 0,
     }
 
 export { icon, sound, group } 
