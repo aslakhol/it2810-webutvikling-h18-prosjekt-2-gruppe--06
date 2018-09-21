@@ -28,9 +28,9 @@ clone the repository.
 
 ## Our solution
 
-We based our project on an idea for a tool we have wanted to create for sometime. We where interested in creating a business card generator for students who do volunteer work for Online. The tool would have you pick which title you have, which comite or group you are in, and generate a card for you. 
+We based our project on an idea for a tool we have wanted to create for sometime. We were interested in creating a business card generator for students who do volunteer work for Online. The tool would have you pick which title you have, which comite or group you are in, and generate a card for you. 
 
-Due to the specific requirements of the project we couldn't design the tool to be as usefull as we had hoped, but we decided that this would fit the requirements well enough and that our work here could be a good starting point for future development. 
+Due to the specific requirements of the project we couldn't design the tool to be as useful as we had hoped, but we decided that this would fit the requirements well enough and that our work here could be a good starting point for future development. 
 
 While the product we have created doesn't quite work as a business card generator, one can see the projects roots in the implementation. We believe it fulfills all the requirements quite nicely and was a very good tool to investigate some of the issues we will encounter when we one day complete the final product. 
 
