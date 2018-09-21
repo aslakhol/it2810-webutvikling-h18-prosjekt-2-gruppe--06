@@ -55,9 +55,20 @@ As mentioned above our files are loaded separately when needed and not reloaded 
 We chose to use fetch for our AJAX-operations. We chose over other frameworks like axios and Jquery's XMLHTTPrequest  since it was easy to get started and it's simpler to work with promises than callbacks.  
 
 
+### Testing
+
+To fulfill the demands of testing that was asked for this assignment, we chose to test the web-application on three different device sizes. These were Apple iPhone 6 standard size (1334x750) and desktop size (1920x1080).
+To test it on these different devices we made a temporary web-server using ngrok.com.
+
+As said above we did not use mobile-first development which resulted in having to fix a few issues as the web-application did not scale properly to smaller device screen sizes in the beginning. This however did not take long to fix, but in retrospect it would have been a good idea to at least test the application earlier and more often on different screen sizes.
 
 
-### Cooperatio
+### Cooperation
+
+Throughout this project we have cooperated as a team, with good communication and plenty of hours together coding alongside each other. Even though we got a new member on or group towards the end, he managed to catch up and contribute. 
+
+Git makes it easy to cooperate with built in version-control. Throughout the project we worked on different branches to add different functionality. When we pushed to master, at least one other member on the group had to do a thorough code review and be pleased with the committed code before the pull request was merged to master.
+
 
 
 ### Conclusion?
