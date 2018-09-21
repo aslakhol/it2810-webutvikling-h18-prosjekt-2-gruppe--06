@@ -1,0 +1,32 @@
+.menu {
+    width: 65%;
+    margin: auto;
+    background: 033A7F;
+}
+
+.tabs{
+    width: 100%;
+    margin: auto;
+    display: table;
+    padding-left: 0;
+    text-align: center;
+}
+
+.list-item{
+    background: lightgray;
+    display: table-cell;
+    vertical-align: middle;
+    height: 3em;
+    -webkit-user-select: none;
+}
+
+.active-tab{
+    background: grey;
+    color: rgb(243, 199, 134);
+}
+
+.content{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
