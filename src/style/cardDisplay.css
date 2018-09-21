@@ -1,5 +1,5 @@
 .card-display {
-    border: solid lightslategray;
+    border: rgb(250,162,27);
     padding: auto;
     padding: 5vw 8vw 5vw 8vw;
     background: rgb(245,245,245);
@@ -8,4 +8,6 @@
 .graphic {
     max-width: 22vw;
     width: auto;
+    display: block;
+    margin: auto;
 }
