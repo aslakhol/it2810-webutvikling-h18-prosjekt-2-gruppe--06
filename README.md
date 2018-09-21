@@ -2,6 +2,8 @@
 
 ## How to set up 
 
+
+### Local install
 Clone the repo locally
 
 Run `npm install`
@@ -9,6 +11,19 @@ Run `npm install`
 Run `npm start`
 
 The app is now available on localhost:3000
+
+### Host publicly
+Your credentials to the server is your ntnu username and password
+
+`ssh ntnuusername@it2810-06.idi.ntnu.no`
+`cd prosjekt2`
+
+clone the repository.
+
+`npm install`
+`npm run build`
+`sudo mv build /var/www/html/prosjekt2`
+
 
 ## Our solution
 
