@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { icon, sound, group } from '../../utils/initialState';
 import Menu from '../menu';
-import CardDisplay from '../cardDisplay';
 import { PATH } from './../../utils/constants';
 import CardMenu from '../cardMenu'
 
@@ -11,7 +10,7 @@ class MediaHandler extends Component {
         this.state = {
             categories: {
                 icon: icon,
-                sound: sound, //these are objects defined in utils/initstate.js
+                sound: sound, // these are objects defined in utils/initstate.js
                 group: group,
             },
             image: null,
@@ -30,21 +29,19 @@ class MediaHandler extends Component {
     }
 
     async handleChange() {
-        await this.child.deleteStates(); //null all the states
-        this.child.initializeState(); //initialize the state of selected tab
+        await this.child.deleteStates(); // null all the states
+        this.child.initializeState(); // initialize the state of selected tab
     }
 
     async fetchSVG() {
         const directory = (() => {
             const selected = this.state.categories.icon.selected;
             return "svg/" + this.state.categories.icon.categories[selected].directory;
-
         })
         const random = Math.floor(Math.random() * 4);
         const path = PATH + directory() + "/" + random + ".svg";
         return await fetch(path)
             .then(response => response.text())
-
     };
 
     async fetchText() {
@@ -62,7 +59,7 @@ class MediaHandler extends Component {
     };
 
     getSound() {
-        const directory = (() => {
+        const directory = ( () => {
             const selected = this.state.categories.sound.selected;
             return this.state.categories.sound.categories[selected].directory;
         })
@@ -79,7 +76,6 @@ class MediaHandler extends Component {
             sound: this.getSound(),
             text: textObject.info,
             title: textObject.name,
-
         }
     }
 
@@ -89,18 +85,11 @@ class MediaHandler extends Component {
                 <Menu
                     categories={this.state.categories}
                     toggleSelected={this.toggleSelected.bind(this)}
-    
                 />
                 <CardMenu 
                     initializeState={this.initializeStateOfCards.bind(this)}
                     ref= {instance => {this.child = instance }}
                  />
-                {/* <CardDisplay
-                    image={this.state.image}
-                    comiteeText={this.state.comiteetext ? this.state.comiteetext.info : null}
-                    comiteeName={this.state.comiteetext ? this.state.comiteetext.name : null}
-                    soundPath={this.state.soundpath}
-                /> */}
             </div>
         )
     }

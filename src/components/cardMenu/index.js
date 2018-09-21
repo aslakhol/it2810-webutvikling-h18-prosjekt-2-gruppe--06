@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import Tabs from './tabs';
 import CardDisplay from '../cardDisplay';
 
-
 class CardMenu extends Component {
     constructor(props) {
         super(props)
         this.state = {
-
             cardStates: [
                 {
                     image: null,
@@ -63,12 +61,8 @@ class CardMenu extends Component {
 
         this.setState({
             cardStates: temp,
-        }, ()=> {return ""}) //This is a hack for awaiting set state
-
-
+        }, () => {return ""}) // This is a hack for awaiting set state
     }
-
-
 
     render() {
         return (
