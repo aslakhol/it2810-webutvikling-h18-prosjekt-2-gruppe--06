@@ -4,7 +4,7 @@
     background: 033A7F;
 }
 
-.tabs{
+.tabs {
     width: 100%;
     margin: auto;
     display: table;
@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.list-item{
+.list-item {
     background: lightgray;
     display: table-cell;
     vertical-align: middle;
@@ -20,12 +20,12 @@
     -webkit-user-select: none;
 }
 
-.active-tab{
+.active-tab {
     background: grey;
     color: rgb(243, 199, 134);
 }
 
-.content{
+.content {
     width: 100%;
     margin: auto;
     text-align: center;
