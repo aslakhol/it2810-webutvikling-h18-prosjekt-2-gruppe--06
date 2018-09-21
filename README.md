@@ -87,8 +87,8 @@ Flex is a set of rules, which allows the developer to automatically stretch colu
 
 ## Testing
 
-To fulfill the demands of testing that was asked for this assignment, we chose to test the web-application on three different device sizes. These were Apple iPhone 6 standard size (1334x750) and desktop size (1920x1080).
-To test it on these different devices we made a temporary web-server using ngrok.com.
+To fulfill the demands of testing that was asked for this assignment, we chose to test the web-application on three different device sizes. These were Apple iPhone 6 standard size (1334x750), iPad (768x1024) and desktop size (1920x1080).
+To test it on these different devices we made a temporary web-server using ngrok.com and acessed the site on the different devices. We also rotated the smaller screens (iPhone & iPad) to see how the scaling responded.
 
 As said above we did not use mobile-first development which resulted in having to fix a few issues as the web-application did not scale properly to smaller device screen sizes in the beginning. This however did not take long to fix, but in retrospect it would have been a good idea to at least test the application earlier and more often on different screen sizes.
 
