@@ -108,4 +108,5 @@ class CardMenu extends Component {
         )
     }
 }
+
 export default CardMenu;
