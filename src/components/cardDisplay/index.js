@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Graphic from './../graphic';
-import Sound from './../sound';
-import TextDisplay from '../textDisplay';
+import Graphic from '../Graphic';
+import Sound from '../Sound';
+import TextDisplay from '../TextDisplay';
 
 class CardDisplay extends Component {
     constructor(props) {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Tabs from './tabs';
-import CardDisplay from '../cardDisplay';
+import CardDisplay from '../CardDisplay';
 
 class CardMenu extends Component {
     constructor(props) {

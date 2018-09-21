@@ -9,7 +9,7 @@ import './style/dropDown.css';
 import './style/cardDisplay.css';
 
 import registerServiceWorker from './utils/registerServiceWorker';
-import MediaHandler from './components/mediaHandler';
+import MediaHandler from './components/MediaHandler';
 
 library.add(faAngleUp, faAngleDown, faCheck);
 const App = () => {

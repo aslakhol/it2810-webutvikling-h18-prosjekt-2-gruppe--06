@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { icon, sound, group } from '../../utils/initialState';
-import Menu from '../menu';
-import { PATH } from './../../utils/constants';
-import CardMenu from '../cardMenu'
+import Menu from '../Menu';
+import { PATH } from '../../utils/constants';
+import CardMenu from '../CardMenu';
 
 class MediaHandler extends Component {
     constructor(props) {
