@@ -67,6 +67,24 @@ This is not true caching, as all objects are lost on refresh. However we believe
 ### Fetch
 We chose to use fetch for our AJAX-operations. We chose over other frameworks like axios and Jquery's XMLHTTPrequest  since it was easy to get started and it's simpler to work with promises than callbacks.  
 
+### Responsive Web Design
+
+We have developed the application with a goal in mind to end up with a responsive application that adapts to different screensizes. Since mobile units and different web-browsers and computerscreens vary. In order to achieve satisfying user-experience we have made the applications 
+
+We did not use mobile-first development - but since we encountered some obstacles in the development phase we have decided to use mobile-first development for the next project, since we that way will get through some of the bigger obstacles early in the development phase. 
+
+**Scaling**
+
+We have enabled the SVG-elements to scale according to screen size. 
+
+**ViewPort**
+
+Viewport is implemented in the generated HTML-file. Viewport has enabled us to design an application which is responsive - where the width, height and size of elements is automatically set according to the size of the device beeing used. 
+
+**Flexbox**
+
+Flex is a set of rules, which allows the developer to automatically stretch columns and rows of content across parent containers. We have used flex in our  dropdown menu. 
+
 ### Testing
 
 To fulfill the demands of testing that was asked for this assignment, we chose to test the web-application on three different device sizes. These were Apple iPhone 6 standard size (1334x750) and desktop size (1920x1080).
