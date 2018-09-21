@@ -1,19 +1,19 @@
 const group = {
         categories: [
             {
-                name: "comitee",
+                name: "Comitee",
                 items: [],
                 id: 0,
                 key: "group",
             },
             {
-                name: "subcomitee",
+                name: "Subcomitee",
                 items: [],
                 id: 1,
                 key: "group",
             },
             {
-                name: "interestgroup",
+                name: "Interestgroup",
                 items: [],
                 id: 2,
                 key: "group",
@@ -25,7 +25,7 @@ const group = {
 const sound = {
         categories: [
             {
-                name: "laser",
+                name: "Laser",
                 items: [],
                 id: 0,
                 key: "sound",
@@ -33,14 +33,14 @@ const sound = {
 
             },
             {
-                name: "powerup",
+                name: "Powerup",
                 items: [],
                 id: 1,
                 key: "sound",
                 directory: "powerup"
             },
             {
-                name: "pickup-coin",
+                name: "Coin",
                 items: [],
                 id: 2,
                 key: "sound",
@@ -68,7 +68,7 @@ const icon = {
                 directory: "supporting",
             },
             {
-                name: "online-logoer",
+                name: "Online-logoer",
                 items: [],
                 id: 2,
                 key: "icon",
