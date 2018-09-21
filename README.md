@@ -22,6 +22,7 @@ Your credentials to the server is your ntnu username and password
 `cd prosjekt2`  
 
 clone the repository.
+edit PATH in `src/utils/constants.js` if neccessary.
 
 `npm install`  
 `npm run build`  
@@ -102,13 +103,3 @@ As said above we did not use mobile-first development which resulted in having t
 Throughout this project we have cooperated as a team, with good communication and plenty of hours together coding alongside each other. Even though we got a new member on or group towards the end, he managed to catch up and contribute. 
 
 Git makes it easy to cooperate with built in version-control. Throughout the project we worked on different branches to add different functionality. When we pushed to master, at least one other member on the group had to do a thorough code review and be pleased with the committed code before the pull request was merged to master.
-
-## Sources
-Here are the sources we used during the development to learn good React practice, and develop the finished product.
-https://blog.logrocket.com/building-a-custom-dropdown-menu-component-for-react-e94f02ced4a1  
-https://alligator.io/react/tabs-component/  
-https://www.robinwieruch.de/react-fetching-data/  
-https://www.youtube.com/watch?v=du6gnsImsLU  
-https://stackoverflow.com/  
-https://www.w3schools.com/  
-
